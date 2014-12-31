@@ -2022,7 +2022,7 @@
     throw v1
 .end method
 
-.method protected getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
+.method private getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
     .locals 4
     .parameter
     .parameter "key"
