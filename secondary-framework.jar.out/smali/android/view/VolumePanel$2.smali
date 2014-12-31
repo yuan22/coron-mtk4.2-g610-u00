@@ -42,7 +42,7 @@
 
     .prologue
     .line 306
-    invoke-virtual {p0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {p0}, Landroid/view/VolumePanel$2;->isShowing()Z
 
     move-result v0
 

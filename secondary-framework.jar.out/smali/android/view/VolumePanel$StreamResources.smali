@@ -1,4 +1,4 @@
-.class final enum Landroid/view/VolumePanel$StreamResources;
+.class public final enum Landroid/view/VolumePanel$StreamResources;
 .super Ljava/lang/Enum;
 .source "VolumePanel.java"
 
@@ -83,9 +83,9 @@
 
     const v4, 0x10403fd
 
-    const v5, 0x3030053
+    const v5, 0x108029a
 
-    const v6, 0x3030053
+    const v6, 0x108029a
 
     move v7, v2
 
@@ -100,9 +100,9 @@
 
     const v7, 0x10403fe
 
-    const v8, 0x3030058
+    const v8, 0x108029f
 
-    const v9, 0x3030059
+    const v9, 0x10802a0
 
     move v5, v11
 
@@ -121,9 +121,9 @@
 
     const v7, 0x10403ff
 
-    const v8, 0x3030057
+    const v8, 0x108029e
 
-    const v9, 0x3030057
+    const v9, 0x108029e
 
     move v5, v12
 
@@ -142,9 +142,9 @@
 
     const v7, 0x10403fa
 
-    const v8, 0x3030050
+    const v8, 0x1080298
 
-    const v9, 0x3030051
+    const v9, 0x1080299
 
     move v5, v13
 
@@ -165,9 +165,9 @@
 
     const v7, 0x2050051
 
-    const v8, 0x303005c
+    const v8, 0x1080368
 
-    const v9, 0x303005d
+    const v9, 0x1080367
 
     move v5, v14
 
@@ -188,9 +188,9 @@
 
     const v7, 0x2050052
 
-    const v8, 0x3030067
+    const v8, 0x1080368
 
-    const v9, 0x3030066
+    const v9, 0x1080367
 
     move v10, v2
 
@@ -207,9 +207,9 @@
 
     const v7, 0x1040400
 
-    const v8, 0x303005c
+    const v8, 0x10802a2
 
-    const v9, 0x303005d
+    const v9, 0x10802a3
 
     move v6, v13
 
@@ -230,9 +230,9 @@
 
     const v7, 0x1040401
 
-    const v8, 0x3030054
+    const v8, 0x108029c
 
-    const v9, 0x3030055
+    const v9, 0x108029d
 
     move v10, v11
 
@@ -251,9 +251,9 @@
 
     const v7, 0x1040400
 
-    const v8, 0x303005c
+    const v8, 0x10802a2
 
-    const v9, 0x303005d
+    const v9, 0x10802a3
 
     move v10, v2
 
@@ -272,9 +272,9 @@
 
     const v7, 0x1040400
 
-    const v8, 0x3030062
+    const v8, 0x1080318
 
-    const v9, 0x3030061
+    const v9, 0x108030c
 
     move v10, v2
 
@@ -404,7 +404,7 @@
     .line 137
     sget-object v0, Landroid/view/VolumePanel$StreamResources;->$VALUES:[Landroid/view/VolumePanel$StreamResources;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Landroid/view/VolumePanel$StreamResources;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
