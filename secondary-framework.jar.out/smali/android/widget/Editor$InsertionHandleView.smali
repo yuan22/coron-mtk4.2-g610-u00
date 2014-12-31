@@ -386,17 +386,14 @@
 
     if-gez v2, :cond_1
 
-    .line 3354
     :cond_0
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Landroid/widget/Editor$HandleView;->showActionPopupWindow(I)V
 
-    .line 3357
     :cond_1
     invoke-direct {p0}, Landroid/widget/Editor$InsertionHandleView;->hideAfterDelay()V
 
-    .line 3358
     return-void
 .end method
 
@@ -404,15 +401,14 @@
     .locals 1
 
     .prologue
-    .line 3361
     invoke-virtual {p0}, Landroid/widget/Editor$InsertionHandleView;->show()V
 
-    .line 3362
+    invoke-direct {p0}, Landroid/widget/Editor$InsertionHandleView;->updatePopupPosition()V
+
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/widget/Editor$HandleView;->showActionPopupWindow(I)V
 
-    .line 3363
     return-void
 .end method
 
@@ -464,5 +460,23 @@
     invoke-static {v0, p1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
 
     .line 3440
+    return-void
+.end method
+
+.method private updatePopupPosition()V
+    .locals 2
+
+    .prologue
+    iget-object v0, p0, Landroid/widget/Editor$InsertionHandleView;->mActionPopupWindow:Landroid/widget/Editor$ActionPopupWindow;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/widget/Editor$InsertionHandleView;->mActionPopupWindow:Landroid/widget/Editor$ActionPopupWindow;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/Editor$ActionPopupWindow;->updatePositionFlag(I)V
+
+    :cond_0
     return-void
 .end method

@@ -1105,7 +1105,7 @@
 
     move-result-object v2
 
-    const v3, 0x111002f
+    const v3, #android:bool@config_voice_capable#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1205,7 +1205,7 @@
 
     move-result-object v2
 
-    const v3, 0x10e0004
+    const v3, #android:integer@config_soundEffectVolumeDb#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1213,14 +1213,13 @@
 
     sput v2, Landroid/media/AudioService;->sSoundEffectVolumeDb:I
 
-    .line 501
-    new-instance v2, Landroid/view/VolumePanel;
+    new-instance v2, Landroid/view/BaiduVolumePanel;
 
     move-object/from16 v0, p1
 
     move-object/from16 v1, p0
 
-    invoke-direct {v2, v0, v1}, Landroid/view/VolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
+    invoke-direct {v2, v0, v1}, Landroid/view/BaiduVolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
 
     move-object/from16 v0, p0
 
@@ -1252,7 +1251,7 @@
 
     move-result-object v2
 
-    const v3, 0x1110049
+    const v3, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1583,7 +1582,7 @@
 
     move-result-object v2
 
-    const v3, 0x1110010
+    const v3, #android:bool@config_useMasterVolume#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1601,7 +1600,7 @@
 
     move-result-object v2
 
-    const v3, 0x1070014
+    const v3, #android:array@config_masterVolumeRamp#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -7086,7 +7085,7 @@
 
     move-result-object v0
 
-    const v1, 0x1110049
+    const v1, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -8826,7 +8825,7 @@
 
     move-result-object v2
 
-    const v4, 0x10e0039
+    const v4, #android:integer@config_safe_media_volume_index#t
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -8843,7 +8842,7 @@
 
     move-result-object v2
 
-    const v4, 0x1110047
+    const v4, #android:bool@config_safe_media_volume_enabled#t
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -13374,27 +13373,22 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 4679
     .restart local v3       #voiceIntent:Landroid/content/Intent;
     :goto_1
     if-eqz p1, :cond_0
 
-    .line 4680
     iget-object v4, p0, Landroid/media/AudioService;->mMediaEventWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v4}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    .line 4683
     :cond_0
     if-eqz v3, :cond_1
 
-    .line 4684
-    const/high16 v4, 0x1080
+    const/high16 v4, #android:drawable@alert_dark_frame#h0
 
     :try_start_0
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 4686
     iget-object v4, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4, v3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -21170,3 +21164,22 @@
 
     goto :goto_0
 .end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iget-mDockState-33e160(Landroid/media/AudioService;)I
+#    .locals 1
+#    .parameter "x0"
+#    .prologue
+#    iget v0, p0, Landroid/media/AudioService;->mDockState:I
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iput-mDockState-78a63a(Landroid/media/AudioService;I)I
+#    .locals 0
+#    .parameter "x0"
+#    .parameter "x1"
+#    .prologue
+#    iput p1, p0, Landroid/media/AudioService;->mDockState:I
+#    return p1
+#.end method

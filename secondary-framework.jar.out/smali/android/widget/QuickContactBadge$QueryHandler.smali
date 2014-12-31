@@ -247,9 +247,11 @@
 
     invoke-virtual {v7}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v7
+    #move-result-object v7
 
-    invoke-virtual {v7, v3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {v7, v3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    invoke-static {v7, v2}, Landroid/widget/QuickContactBadge$BaiduInjector;->showStrangeQuickContact(Landroid/widget/QuickContactBadge;Landroid/net/Uri;)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
