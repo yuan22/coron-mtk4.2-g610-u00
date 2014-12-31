@@ -518,6 +518,12 @@
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
+    invoke-static {}, Landroid/widget/QuickContactBadge$BaiduInjector;->enable()Z
+
+    move-result v1
+
+    if-nez v1, :cond_baidu_0
+
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v1

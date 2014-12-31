@@ -9551,6 +9551,8 @@
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->updatePowerStateLocked()V
 
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/PowerManagerService$BaiduInjector;->regitsterButtonLightReceiver(Lcom/android/server/power/PowerManagerService;)V
+
     monitor-exit v12
 
     return-void

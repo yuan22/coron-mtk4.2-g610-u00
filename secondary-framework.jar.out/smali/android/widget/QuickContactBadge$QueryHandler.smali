@@ -245,7 +245,7 @@
     .local v3, intent:Landroid/content/Intent;
     iget-object v7, p0, Landroid/widget/QuickContactBadge$QueryHandler;->this$0:Landroid/widget/QuickContactBadge;
 
-    invoke-virtual {v7}, Landroid/view/View;->getContext()Landroid/content/Context;
+    #invoke-virtual {v7}, Landroid/widget/QuickContactBadge;->getContext()Landroid/content/Context;
 
     #move-result-object v7
 

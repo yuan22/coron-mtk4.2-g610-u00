@@ -110,6 +110,13 @@
 
 .field private final mUpClickListener:Landroid/view/View$OnClickListener;
 
+.field private mUpGoerFive:Landroid/view/ViewGroup;
+
+.field mUseActivityIcon:Z
+
+.field mUseActivityLogo:Z
+
+.field mUseCustomIcon:Z
 .field private mUserTitle:Z
 
 .field mWindowCallback:Landroid/view/Window$Callback;
@@ -227,6 +234,8 @@
 
     iput-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mLogo:Landroid/graphics/drawable/Drawable;
 
+    invoke-static/range {p0 .. p0}, Lcom/android/internal/widget/ActionBarView$BaiduInjector;->setUseActivityLogo(Lcom/android/internal/widget/ActionBarView;)V
+
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mLogo:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_1
@@ -277,6 +286,7 @@
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mIcon:Landroid/graphics/drawable/Drawable;
+    invoke-static/range {p0 .. p0}, Lcom/android/internal/widget/ActionBarView$BaiduInjector;->setUseActivityIcon(Lcom/android/internal/widget/ActionBarView;)V
 
     .line 210
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mIcon:Landroid/graphics/drawable/Drawable;

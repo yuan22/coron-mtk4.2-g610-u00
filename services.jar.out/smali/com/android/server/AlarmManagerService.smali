@@ -8114,6 +8114,8 @@
 
     .line 415
     :cond_5
+    invoke-static {p0, v0, v1}, Lcom/android/server/AlarmManagerService$BaiduInjector;->setLockAgain(Lcom/android/server/AlarmManagerService;Lcom/android/server/AlarmManagerService$Alarm;I)V
+
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

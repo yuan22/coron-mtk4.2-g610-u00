@@ -79,6 +79,15 @@
 .field private static final sLock:Ljava/lang/Object;
 
 .field private static volatile sPrimaryVolume:Landroid/os/storage/StorageVolume;
+    .annotation build Lcom/android/internal/annotations/GuardedBy;
+        value = "sLock"
+    .end annotation
+.end field
+
+.field private static volatile sSecondaryVolume:Landroid/os/storage/StorageVolume;
+
+.field private static sSecondaryVolumeInit:Z
+
 
 # direct methods
 .method static constructor <clinit>()V

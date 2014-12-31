@@ -1720,7 +1720,7 @@
 
     .prologue
     :try_start_0
-    invoke-super {p0}, Landroid/os/Binder;->finalize()V
+    invoke-super {p0}, Lcom/android/internal/telephony/IccSmsInterfaceManagerBaidu;->finalize()V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
