@@ -964,15 +964,37 @@
     .line 685
     iget-object v0, p0, Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
-    invoke-virtual {v0}, Lcom/android/internal/telephony/PhoneBase;->getIccCard()Lcom/android/internal/telephony/IccCard;
+    iget-object v0, v0, Lcom/android/internal/telephony/PhoneBase;->mIccRecords:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/internal/telephony/IccCard;->isPhbReady()Z
+    if-nez v0, :cond_0
+
+    .line 667
+    const/4 v0, 0x0
+
+    .line 669
+    :goto_0
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+
+    iget-object v0, v0, Lcom/android/internal/telephony/PhoneBase;->mIccRecords:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/internal/telephony/IccRecords;
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/IccRecords;->isPhbReady()Z
 
     move-result v0
 
-    return v0
+    goto :goto_0
 .end method
 
 .method protected abstract logd(Ljava/lang/String;)V
