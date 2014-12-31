@@ -4074,13 +4074,13 @@
 .end method
 
 # Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$sput-mReboot-d6390c(Z)Z
-#    .locals 0
-#    .parameter "x0"
-#    .prologue
-#    sput-boolean p0, Lcom/android/server/power/ShutdownThread;->mReboot:Z
-#    return p0
-#.end method
+.method static synthetic access$sput-mReboot-d6390c(Z)Z
+    .locals 0
+    .parameter "x0"
+    .prologue
+    sput-boolean p0, Lcom/android/server/power/ShutdownThread;->mReboot:Z
+    return p0
+.end method
 
 .method static synthetic access$sput-mRebootReason-ba5398(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
