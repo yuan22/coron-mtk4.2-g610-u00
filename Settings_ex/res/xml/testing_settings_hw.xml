@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/testing" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/mmi_test_label" android:key="mmi_test">
+        <intent android:action="com.huawei.mmitestII.action.MMI_TEST2" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/mmi_shorttest_label" android:key="mmi_sorttest">
+        <intent android:action="com.huawei.mmitestII.action.MMI_TESTSP" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/mmi_audioshorttest_label" android:key="mmi_audiosorttest">
+        <intent android:action="com.huawei.mmitestII.action.MMI_AUDIOTEST" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/project_menu_label" android:key="project_menu">
+        <intent android:action="com.android.huawei.projectmenu.MANAGERINFO" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/mmi_function_test_label" android:key="mmi_function_test">
+        <intent android:action="com.huawei.mmifunction.MMIFuntionTest" />
+    </PreferenceScreen>
+</PreferenceScreen>

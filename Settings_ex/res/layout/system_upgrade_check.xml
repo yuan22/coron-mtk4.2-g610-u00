@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_upgrade_warning" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/ic_dialog_alert" android:paddingLeft="20.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/system_upgrade_explain_sdcard" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_upgrade_explain_sdcard" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <ImageView android:background="@drawable/ic_dialog_alert" android:paddingBottom="30.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_upgrade_explain_battery" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <ImageView android:background="@drawable/ic_dialog_alert" android:paddingBottom="30.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_upgrade_explain_backup" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip">
+                <Button android:gravity="center" android:layout_gravity="center" android:id="@id/system_upgrade_backup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/system_upgrade_explain_backup_button" android:layout_weight="0.01" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

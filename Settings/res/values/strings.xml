@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <add-resource type="string" name="addsetting2" />
+    <string name="addsetting2">default storage change</string>
+    <add-resource type="id" name="addsetting2" />
+</resources>

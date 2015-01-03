@@ -143,7 +143,7 @@ baidu_modify_apps := Phone Settings
 # The default value is Coron.
 # You should configure the property according to your ID, ie, replace "Coron" with your ID.
 override_property += \
-    ro.baidu.romer=Po_Chan
+    ro.baidu.romer=Po_Chan \
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.

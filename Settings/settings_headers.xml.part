@@ -1,0 +1,3 @@
+    <header android:icon="@drawable/ic_settings_recovery" android:id="@+id/addsetting2" android:title="@string/addsetting2">
+        <intent android:action="android.settings_ex.MEMORY_CARD_SETTINGS" />
+    </header>
