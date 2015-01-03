@@ -144,6 +144,9 @@ baidu_modify_apps := Phone Settings
 # You should configure the property according to your ID, ie, replace "Coron" with your ID.
 override_property += \
     ro.baidu.romer=Po_Chan \
+    romzj.rom.id=cb6ebad5-2188-3563-28b3-444a79435322 \
+    romzj.rom.version=3 \
+    romzj.rom.version.code=63 \
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
