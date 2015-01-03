@@ -64,7 +64,7 @@
 
     const/4 v3, 0x0
 
-    .line 172
+    .line 176
     new-instance v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
     const-string v1, "ringer_stream"
@@ -89,7 +89,7 @@
 
     sput-object v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->videocall_Stream:Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
-    .line 173
+    .line 177
     new-instance v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
     const-string v1, "ringer_volume"
@@ -116,7 +116,7 @@
 
     sput-object v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->alarm_volume:Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
-    .line 174
+    .line 178
     new-instance v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
     const-string v1, "vibration_enabled"
@@ -157,7 +157,7 @@
 
     sput-object v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->hapticfeedback_enabled:Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
-    .line 175
+    .line 179
     new-instance v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
     const-string v1, "lockscreensound_enabled"
@@ -168,7 +168,7 @@
 
     sput-object v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->lockscreensound_enabled:Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
-    .line 171
+    .line 175
     const/16 v0, 0xb
 
     new-array v0, v0, [Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
@@ -245,7 +245,7 @@
     .end annotation
 
     .prologue
-    .line 171
+    .line 175
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -256,7 +256,7 @@
     .parameter "name"
 
     .prologue
-    .line 171
+    .line 175
     const-class v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -272,10 +272,10 @@
     .locals 1
 
     .prologue
-    .line 171
+    .line 175
     sget-object v0, Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->$VALUES:[Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/mediatek/audioprofile/AudioProfileManager$ProfileSettings;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

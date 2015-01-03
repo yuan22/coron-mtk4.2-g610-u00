@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 3027
+    .line 3121
     iput-object p1, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -47,35 +47,35 @@
 
     const/4 v6, 0x1
 
-    .line 3031
+    .line 3125
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3032
+    .line 3126
     .local v1, name:Ljava/lang/String;
     iget v2, p1, Landroid/os/Message;->arg1:I
 
-    .line 3033
+    .line 3127
     .local v2, valueInt:I
     const/4 v3, 0x0
 
-    .line 3034
+    .line 3128
     .local v3, valueSting:Ljava/lang/String;
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 3035
+    .line 3129
     .local v0, bundle:Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 3036
+    .line 3130
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3038
+    .line 3132
     :cond_0
     const-string v7, "AudioProfileService"
 
@@ -131,12 +131,12 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3040
+    .line 3134
     iget v7, p1, Landroid/os/Message;->what:I
 
     packed-switch v7, :pswitch_data_0
 
-    .line 3138
+    .line 3232
     :pswitch_0
     const-string v5, "AudioProfileService"
 
@@ -162,11 +162,11 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3141
+    .line 3235
     :goto_0
     return-void
 
-    .line 3042
+    .line 3136
     :pswitch_1
     iget-object v7, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -189,7 +189,7 @@
 
     goto :goto_1
 
-    .line 3047
+    .line 3141
     :pswitch_2
     iget-object v6, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -212,7 +212,7 @@
 
     goto :goto_2
 
-    .line 3052
+    .line 3146
     :pswitch_3
     iget-object v6, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -237,7 +237,7 @@
 
     goto :goto_3
 
-    .line 3057
+    .line 3151
     :pswitch_4
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -252,7 +252,7 @@
 
     goto :goto_0
 
-    .line 3061
+    .line 3155
     :pswitch_5
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -267,7 +267,7 @@
 
     goto :goto_0
 
-    .line 3065
+    .line 3159
     :pswitch_6
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -282,7 +282,7 @@
 
     goto :goto_0
 
-    .line 3069
+    .line 3163
     :pswitch_7
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -297,7 +297,7 @@
 
     goto :goto_0
 
-    .line 3074
+    .line 3168
     :pswitch_8
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -310,7 +310,7 @@
 
     goto :goto_0
 
-    .line 3078
+    .line 3172
     :pswitch_9
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -323,7 +323,7 @@
 
     goto :goto_0
 
-    .line 3082
+    .line 3176
     :pswitch_a
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -336,7 +336,7 @@
 
     goto/16 :goto_0
 
-    .line 3086
+    .line 3180
     :pswitch_b
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -347,7 +347,7 @@
 
     invoke-static {v5, v1, v3}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 3087
+    .line 3181
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     #getter for: Lcom/mediatek/audioprofile/AudioProfileService;->mContentResolver:Landroid/content/ContentResolver;
@@ -370,7 +370,7 @@
 
     goto/16 :goto_0
 
-    .line 3092
+    .line 3186
     :pswitch_c
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -381,7 +381,7 @@
 
     invoke-static {v5, v1, v3}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 3093
+    .line 3187
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     #getter for: Lcom/mediatek/audioprofile/AudioProfileService;->mContentResolver:Landroid/content/ContentResolver;
@@ -404,7 +404,7 @@
 
     goto/16 :goto_0
 
-    .line 3098
+    .line 3192
     :pswitch_d
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -415,7 +415,7 @@
 
     invoke-static {v5, v1, v3}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 3099
+    .line 3193
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     #getter for: Lcom/mediatek/audioprofile/AudioProfileService;->mContentResolver:Landroid/content/ContentResolver;
@@ -438,7 +438,7 @@
 
     goto/16 :goto_0
 
-    .line 3104
+    .line 3198
     :pswitch_e
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -451,7 +451,7 @@
 
     goto/16 :goto_0
 
-    .line 3108
+    .line 3202
     :pswitch_f
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -464,7 +464,7 @@
 
     goto/16 :goto_0
 
-    .line 3112
+    .line 3206
     :pswitch_10
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -477,7 +477,7 @@
 
     goto/16 :goto_0
 
-    .line 3116
+    .line 3210
     :pswitch_11
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -490,7 +490,7 @@
 
     goto/16 :goto_0
 
-    .line 3120
+    .line 3214
     :pswitch_12
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -503,7 +503,7 @@
 
     goto/16 :goto_0
 
-    .line 3124
+    .line 3218
     :pswitch_13
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -516,14 +516,14 @@
 
     goto/16 :goto_0
 
-    .line 3128
+    .line 3222
     :pswitch_14
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     #setter for: Lcom/mediatek/audioprofile/AudioProfileService;->mDelaySetVibrate:Z
     invoke-static {v5, v10}, Lcom/mediatek/audioprofile/AudioProfileService;->access$802(Lcom/mediatek/audioprofile/AudioProfileService;Z)Z
 
-    .line 3129
+    .line 3223
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     iget-object v7, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
@@ -543,7 +543,7 @@
 
     move v4, v6
 
-    .line 3132
+    .line 3226
     .local v4, vibrationStatus:I
     :cond_4
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
@@ -555,7 +555,7 @@
 
     invoke-virtual {v5, v10, v4}, Landroid/media/AudioManager;->setVibrateSetting(II)V
 
-    .line 3133
+    .line 3227
     iget-object v5, p0, Lcom/mediatek/audioprofile/AudioProfileService$AudioProfileHandler;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     #getter for: Lcom/mediatek/audioprofile/AudioProfileService;->mAudioManager:Landroid/media/AudioManager;
@@ -565,7 +565,7 @@
 
     invoke-virtual {v5, v6, v4}, Landroid/media/AudioManager;->setVibrateSetting(II)V
 
-    .line 3134
+    .line 3228
     const-string v5, "AudioProfileService"
 
     const-string v6, "CTS test finish, set vibrate again to make function normal!"
@@ -574,7 +574,7 @@
 
     goto/16 :goto_0
 
-    .line 3040
+    .line 3134
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

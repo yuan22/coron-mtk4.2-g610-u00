@@ -24,15 +24,15 @@
     .parameter
 
     .prologue
-    .line 2989
+    .line 3083
     iput-object p1, p0, Lcom/mediatek/audioprofile/AudioProfileService$OverrideSystemThread;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
-    .line 2990
+    .line 3084
     const-string v0, "AudioProfileService"
 
     invoke-direct {p0, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
-    .line 2991
+    .line 3085
     return-void
 .end method
 
@@ -42,15 +42,15 @@
     .locals 4
 
     .prologue
-    .line 2996
+    .line 3090
     invoke-static {}, Landroid/os/Looper;->prepare()V
 
-    .line 2998
+    .line 3092
     iget-object v1, p0, Lcom/mediatek/audioprofile/AudioProfileService$OverrideSystemThread;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     monitor-enter v1
 
-    .line 2999
+    .line 3093
     :try_start_0
     iget-object v0, p0, Lcom/mediatek/audioprofile/AudioProfileService$OverrideSystemThread;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
@@ -63,23 +63,23 @@
     #setter for: Lcom/mediatek/audioprofile/AudioProfileService;->mAudioProfileHandler:Landroid/os/Handler;
     invoke-static {v0, v2}, Lcom/mediatek/audioprofile/AudioProfileService;->access$2302(Lcom/mediatek/audioprofile/AudioProfileService;Landroid/os/Handler;)Landroid/os/Handler;
 
-    .line 3002
+    .line 3096
     iget-object v0, p0, Lcom/mediatek/audioprofile/AudioProfileService$OverrideSystemThread;->this$0:Lcom/mediatek/audioprofile/AudioProfileService;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notify()V
 
-    .line 3003
+    .line 3097
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3006
+    .line 3100
     invoke-static {}, Landroid/os/Looper;->loop()V
 
-    .line 3007
+    .line 3101
     return-void
 
-    .line 3003
+    .line 3097
     :catchall_0
     move-exception v0
 
